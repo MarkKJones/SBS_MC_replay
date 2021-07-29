@@ -1,0 +1,5 @@
+## example output variable definition for replay_gmn.C
+
+block bb.ps.*
+block bb.sh.*
+

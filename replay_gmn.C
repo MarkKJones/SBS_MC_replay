@@ -42,9 +42,9 @@ void replay_gmn_test(const char* filebase, uint nev = -1, TString experiment="gm
   //  bigbite->AddDetector( new SBSGEMSpectrometerTracker("gem", "GEM tracker") );
   gHaApps->Add(bigbite);
   
-  //SBSEArm *harm = new SBSEArm("sbs","Hadron Arm with HCal");
-  //harm->AddDetector( new SBSHCal("hcal","HCAL") );
-  //gHaApps->Add(harm);
+  SBSEArm *harm = new SBSEArm("sbs","Hadron Arm with HCal");
+  harm->AddDetector( new SBSHCal("hcal","HCAL") );
+  gHaApps->Add(harm);
 
   //bigbite->SetDebug(2);
   //harm->SetDebug(2);

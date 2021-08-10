@@ -69,10 +69,4 @@ TTree *tsimc = (TTree*) fsimc->Get("T");
 		h_psNum->Fill(float(numps));
 		h_shNum->Fill(float(numsh));
 	}  //
- TCanvas *canhit = new TCanvas("canhit","Hits", 700,700);
- canhit->Divide(1,2);
-		canhit->cd(1);
-		h_psNum->Draw();
-		canhit->cd(2);
-		h_shNum->Draw();
 }
